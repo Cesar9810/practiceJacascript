@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basicos de JavaScript</title>
+</head>
+<body>
+    <h1>Revisar resultado en la consola</h1>
+
+    <script>
+        // Los Parámetros REST (...) permiten agrupar múltiples argumentos 
+        // en una sola variable cuando se llama a una función
+        function sumarTodos(...numeros){
+            return numeros.reduce((acumulador, valorActual)=>acumulador+valorActual, 0);
+        }
+
+        console.log (sumarTodos(1,2,3,4,5,6,7,8,9));
+
+        //El Operador Spread se usa para "expandir" o "desempaquetar" los elementos 
+        //de un arreglo o un objeto en contextos donde se esperan múltiples valores, 
+        //como en una función, otro arreglo, o un objeto.
+        
+        //Combinar Arreglos
+        const arr1 = [1,2,3,5]
+        const arr2 = [4,6,7,8]
+
+        const combinado = [...arr1, ...arr2]
+        console.log (combinado)
+
+    </script>
+</body>
+</html>

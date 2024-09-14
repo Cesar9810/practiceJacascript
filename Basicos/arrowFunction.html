@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basicos de JavaScript</title>
+</head>
+<body>
+    <h1>Revisar resultado en la consola</h1>
+
+    <script>
+        /* Una arrow function (función flecha) es una forma más concisa de escribir funciones en JavaScript 
+        introducida con ES6. Utiliza la sintaxis => (flecha) y, a menudo, se prefiere por su simplicidad y 
+        por no modificar el valor de this */
+
+        const saludar = nombre => `Hola, ${nombre}.`
+        console.log(saludar('Cesar'));
+
+        const sumar = (a,b) => a+b
+        console.log(sumar(7,9));
+
+        const esPar = numero => {
+            if (numero % 2 === 0 ){
+                return true
+            }else{
+                return false
+            }
+        }
+        console.log(esPar(400));
+        console.log(esPar(233));
+
+    </script>
+</body>
+</html>
